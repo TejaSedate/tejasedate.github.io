@@ -1,0 +1,156 @@
+* {
+    color: #000;
+}
+
+div.container {
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: -webkit-xxx-large;
+}
+
+.text-center {
+    text-align: center;
+}
+
+::-moz-selection {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+::selection {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+@-webkit-keyframes bgClr {
+    0% {
+        background-color: #e8e8e8;
+    }
+    6% {
+        background-color: #FFC107;
+    }
+    12% {
+        background-color: #FF9800;
+    }
+    18% {
+        background-color: #FF5722;
+    }
+    24% {
+        background-color: #F44336;
+    }
+    30% {
+        background-color: #E91E63;
+    }
+    36% {
+        background-color: #9C27B0;
+    }
+    42% {
+        background-color: #673AB7;
+    }
+    48% {
+        background-color: #3F51B5;
+    }
+    54% {
+        background-color: #2196F3;
+    }
+    60% {
+        background-color: #03A9F4;
+    }
+    66% {
+        background-color: #00BCD4;
+    }
+    72% {
+        background-color: #009688;
+    }
+    78% {
+        background-color: #4CAF50;
+    }
+    84% {
+        background-color: #8BC34A;
+    }
+    90% {
+        background-color: #CDDC39;
+    }
+    96% {
+        background-color: #FFEB3B;
+    }
+}
+
+@keyframes bgClr {
+    0% {
+        background-color: #e8e8e8;
+    }
+    6% {
+        background-color: #FFC107;
+    }
+    12% {
+        background-color: #FF9800;
+    }
+    18% {
+        background-color: #FF5722;
+    }
+    24% {
+        background-color: #F44336;
+    }
+    30% {
+        background-color: #E91E63;
+    }
+    36% {
+        background-color: #9C27B0;
+    }
+    42% {
+        background-color: #673AB7;
+    }
+    48% {
+        background-color: #3F51B5;
+    }
+    54% {
+        background-color: #2196F3;
+    }
+    60% {
+        background-color: #03A9F4;
+    }
+    66% {
+        background-color: #00BCD4;
+    }
+    72% {
+        background-color: #009688;
+    }
+    78% {
+        background-color: #4CAF50;
+    }
+    84% {
+        background-color: #8BC34A;
+    }
+    90% {
+        background-color: #CDDC39;
+    }
+    96% {
+        background-color: #FFEB3B;
+    }
+}
+
+body {
+    background-color: #e8e8e8;
+    -webkit-animation-name: bgClr;
+    animation-name: bgClr;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
