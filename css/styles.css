@@ -1,11 +1,3 @@
-* {
-    color: #000;
-}
-
-div.container {
-    margin: auto;
-}
-
 h1,
 h2,
 h3,
@@ -15,8 +7,28 @@ h6 {
     font-weight: 100;
 }
 
+div.container {
+    width: 80%;
+    margin: auto;
+}
+
 h1 {
-    font-size: -webkit-xxx-large;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1em;
+}
+
+footer {
+    border-top: 1px solid grey;
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+}
+
+footer div {
+    padding: 1em;
+    color: grey;
+    font-weight: 300;
+    font-size: small;
 }
 
 .text-center {
