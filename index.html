@@ -30,14 +30,8 @@
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
     <link href="css/styles.css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="typography-scroll">
-        <span>Teja</span>
-    </div>
     <script>
-        // This is the service worker with the Advanced caching
+    // This is the service worker with the Advanced caching
 
         // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
 
@@ -57,6 +51,14 @@
             }
         }
 
+    </script>
+</head>
+
+<body>
+    <div class="typography-scroll">
+        <span>Teja</span>
+    </div>
+    <script>
         let deferredPrompt = null;
 
         window.addEventListener('beforeinstallprompt', (e) => {
