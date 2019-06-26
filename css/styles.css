@@ -1,168 +1,94 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 100;
-}
-
-div.container {
-    width: 80%;
-    margin: auto;
-}
-
-h1 {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 1em;
-}
-
-footer {
-    border-top: 1px solid grey;
-    position: absolute;
-    bottom: 0px;
-    width: inherit;
-}
-
-footer div {
-    padding: 1em;
-    color: grey;
-    font-weight: 300;
-    font-size: small;
-}
-
-.text-center {
-    text-align: center;
-}
-
-::-moz-selection {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-}
-
-::selection {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-}
-
-@-webkit-keyframes bgClr {
-    0% {
-        background-color: #e8e8e8;
-    }
-    6% {
-        background-color: #FFC107;
-    }
-    12% {
-        background-color: #FF9800;
-    }
-    18% {
-        background-color: #FF5722;
-    }
-    24% {
-        background-color: #F44336;
-    }
-    30% {
-        background-color: #E91E63;
-    }
-    36% {
-        background-color: #9C27B0;
-    }
-    42% {
-        background-color: #673AB7;
-    }
-    48% {
-        background-color: #3F51B5;
-    }
-    54% {
-        background-color: #2196F3;
-    }
-    60% {
-        background-color: #03A9F4;
-    }
-    66% {
-        background-color: #00BCD4;
-    }
-    72% {
-        background-color: #009688;
-    }
-    78% {
-        background-color: #4CAF50;
-    }
-    84% {
-        background-color: #8BC34A;
-    }
-    90% {
-        background-color: #CDDC39;
-    }
-    96% {
-        background-color: #FFEB3B;
-    }
-}
-
-@keyframes bgClr {
-    0% {
-        background-color: #e8e8e8;
-    }
-    6% {
-        background-color: #FFC107;
-    }
-    12% {
-        background-color: #FF9800;
-    }
-    18% {
-        background-color: #FF5722;
-    }
-    24% {
-        background-color: #F44336;
-    }
-    30% {
-        background-color: #E91E63;
-    }
-    36% {
-        background-color: #9C27B0;
-    }
-    42% {
-        background-color: #673AB7;
-    }
-    48% {
-        background-color: #3F51B5;
-    }
-    54% {
-        background-color: #2196F3;
-    }
-    60% {
-        background-color: #03A9F4;
-    }
-    66% {
-        background-color: #00BCD4;
-    }
-    72% {
-        background-color: #009688;
-    }
-    78% {
-        background-color: #4CAF50;
-    }
-    84% {
-        background-color: #8BC34A;
-    }
-    90% {
-        background-color: #CDDC39;
-    }
-    96% {
-        background-color: #FFEB3B;
-    }
-}
-
 body {
-    background-color: #e8e8e8;
-    -webkit-animation-name: bgClr;
-    animation-name: bgClr;
-    -webkit-animation-duration: 30s;
-    animation-duration: 30s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
+    background: linear-gradient(270deg, #e8e8e8, #ffc107, #ff9800, #ff5722, #f44336, #e91e63, #9c27b0, #673ab7, #3f51b5, #2196f3, #03a9f4, #00bcd4, #009688, #4caf50, #8bc34a, #cddc39, #ffeb3b);
+    background-size: 3400% 3400%;
+    -webkit-animation: bg-animation 28s ease infinite;
+    -moz-animation: bg-animation 28s ease infinite;
+    -o-animation: bg-animation 28s ease infinite;
+    animation: bg-animation 28s ease infinite;
+}
+
+@-webkit-keyframes bg-animation {
+    0% {
+        background-position: 0% 100%
+    }
+
+    50% {
+        background-position: 100% 0%
+    }
+
+    100% {
+        background-position: 0% 100%
+    }
+}
+
+@-moz-keyframes bg-animation {
+    0% {
+        background-position: 0% 100%
+    }
+
+    50% {
+        background-position: 100% 0%
+    }
+
+    100% {
+        background-position: 0% 100%
+    }
+}
+
+@-o-keyframes bg-animation {
+    0% {
+        background-position: 0% 100%
+    }
+
+    50% {
+        background-position: 100% 0%
+    }
+
+    100% {
+        background-position: 0% 100%
+    }
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: 0% 100%
+    }
+
+    50% {
+        background-position: 100% 0%
+    }
+
+    100% {
+        background-position: 0% 100%
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+.typography-scroll {
+    align-items: center;
+    animation: 100s slide-left linear infinite;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    bottom: 0;
+    color: rgba(12, 12, 12, 0.05);
+    display: -ms-flexbox;
+    display: flex;
+    font-family: monospace;
+    font-size: 75vh;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    white-space: nowrap;
+    will-change: transform;
+    z-index: -1;
 }
