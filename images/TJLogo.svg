@@ -1,0 +1,35 @@
+<svg width="600" height="600" version="1.1" viewBox="0 0 158.75 158.75" xmlns="http://www.w3.org/2000/svg">
+    <style>
+    .fav-theme {
+        stroke: #bbc6ce;
+        fill: #415462;
+    }
+
+    .fav-contrast {
+        fill: #bbc6ce;
+        stroke: #415462;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .fav-contrast {
+            stroke: #bbc6ce;
+            fill: #415462;
+        }
+
+        .fav-theme {
+            fill: #bbc6ce;
+            stroke: #415462;
+        }
+    }
+    </style>
+    <g>
+        <text class="fav-contrast" x="243.68126" y="110.06667" fill="#000000" font-family="sans-serif" font-size="10.583px" stroke-width=".26458" style="line-height:1.25" xml:space="preserve">
+            <tspan x="243.68126" y="110.06667" stroke-width=".26458" />
+        </text>
+        <text class="fav-theme" fill="black" font-family="sans-serif" font-size="10.583px" style="line-height:1.25;shape-inside:url(#rect865);white-space:pre" xml:space="preserve" />
+        <rect x="15.875" y="121.71" width="127" height="15.875" fill="#2ca05a" />
+        <text x="25.004459" y="105.45314" fill="#000000" font-family="System-ui" font-size="119.86px" font-weight="bold" stroke="#bbc6ce" stroke-width=".72073" style="line-height:1.25" xml:space="preserve">
+            <tspan class="fav-theme" x="25.004459" y="105.45314" font-family="System-ui" font-weight="bold" stroke="#bbc6ce" stroke-width=".72073">TJ</tspan>
+        </text>
+    </g>
+</svg>
