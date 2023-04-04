@@ -1,19 +1,31 @@
 {
     "dir": "ltr",
     "lang": "en",
-    "name": "Teja",
+    "name": "Teja N",
     "scope": "/",
     "display": "standalone",
     "start_url": "https://tejasedate.github.io/",
     "short_name": "TJ",
-    "theme_color": "#0099d2",
-    "description": "A front-end engineer profile. Teja",
+    "theme_color": "#2ca05a",
+    "description": "Passionate and Analytical Tech Enthusiast with over 14 years of experience in Technology Consulting.",
     "orientation": "any",
     "background_color": "#FFFFFF",
     "related_applications": [],
     "prefer_related_applications": false,
     "generated": "true",
     "icons": [
+
+        {
+            "src": "https://tejasedate.github.io/images/TJLogo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "https://tejasedate.github.io/images/TJLogo_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
         {
             "src": "https://tejasedate.github.io/images/apple-touch-icon-57x57.png",
             "sizes": "57x57",
