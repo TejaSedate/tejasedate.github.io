@@ -26,11 +26,11 @@ const setPreference = () => {
 
 const reflectPreference = () => {
     document.firstElementChild
-        .setAttribute('data-theme', theme.value)
+        .setAttribute('data-theme', theme.value);
 
     document
         .querySelector('#theme-toggle')
-        ?.setAttribute('aria-label', theme.value)
+        ?.setAttribute('aria-label', theme.value);
 }
 
 const theme = {
@@ -49,6 +49,18 @@ const smoothScroll = (e) => {
     window.scrollTo({ top: y, behavior: 'smooth' });
 }
 
+const printResume = () => {
+    const divContents = document.querySelector(".container").innerHTML;
+    var a = window.open('', '', 'height=500, width=500');
+    a.document.write('<html>');
+    a.document.write('<head>');
+    a.document.write('<title>Teja N | 14+ Years of Experience</title>');
+    a.document.write('<link rel="stylesheet" href="css/styles.min.css">');
+    a.document.write(`<body onload="window.print();" onafterprint="self.close()" class="container-fluid">`);
+    a.document.write(divContents);
+    a.document.write('</body></html>');
+    a.document.close();
+}
 
 
 window.onload = () => {
